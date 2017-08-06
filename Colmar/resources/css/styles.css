@@ -1,0 +1,528 @@
+html {
+  font-size: 16px;
+  font-family: 'Cabin', sans-serif;
+  color: hsl(194, 10%, 30%);
+  background-color: hsl(194, 10%, 90%);
+}
+
+/*div {
+  border: 1px solid black;
+}*/
+
+h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+h4{
+  font-size: 1.2rem;
+}
+
+h5{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#wrapper{
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+/*HEADER*/
+
+#header {
+
+  height: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#logo {
+  display: flex;
+  margin-left: 24px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 30%;
+}
+
+#text-logo li{
+  display: inline;
+  font-size: 1.1rem;
+}
+
+#text-logo li:first-child{
+  font-weight: bold;
+}
+
+#text-logo li:last-child {
+  color: hsl(194, 10%, 60%);
+}
+
+#text-logo li:last-child{
+  margin-left: -0.25rem;
+}
+
+#nav {
+  margin-right: 24px;
+}
+#nav li{
+  display: inline;
+  font-size: .8rem;
+  margin-left: 16px;
+}
+
+#icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+
+/*BANNER*/
+
+#banner-container {
+  background-color: hsl(194, 10%, 70%);
+  display: flex;
+  width: 100%;
+  height: 392px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+#banner-photo {
+  height: 328px;
+  width: 60%;
+  margin: 32px 40px 32px 24px;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+}
+
+
+#banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 60%;
+  width: 40%;
+}
+
+#banner-copy h1{
+  margin-bottom: 1.5rem;
+}
+
+#banner-copy h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+#banner-button h4 {
+  color: white;
+  font-size: 1rem;
+  padding: 12px 60px;
+}
+
+#banner-button {
+  background-color: hsl(194, 10%, 30%);
+  width: 300px;
+  text-align: center;
+}
+
+/*INFORMATION*/
+
+#info-container {
+  display: flex;
+}
+
+#info-container h3 {
+  margin: 0.5rem 0 1rem 0;
+}
+
+#info-container a {
+  color: hsl(194, 90%, 30%);
+  font-weight: bold;
+}
+
+#info-main {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 32px 40px 32px 24px;
+}
+
+#info-main-photo {
+
+  background-image: url(../images/information-main.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 328px;
+  width: 100%;
+}
+
+#info-main-headline h1{
+  margin: 32px 20px 24px 0px;
+}
+
+#info-main-copy h5{
+  margin-top: 24px;
+}
+
+#info-column {
+  border-left: solid 1px hsl(194, 10%, 70%);
+  width: 40%;
+
+}
+
+.info-column-item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+
+.info-column-item-photo {
+  width: 148px;
+  height: 148px;
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  margin: 16px;
+}
+
+.info-column-item-copy {
+  margin-left: 20px;
+}
+
+#orientation-photo {
+  background-image: url(../images/information-orientation.jpg);
+  margin-top: 32px;
+}
+
+#campus-photo {
+  background-image: url(../images/information-campus.jpg);
+}
+
+#lecture-photo {
+  background-image: url(../images/information-guest-lecture.jpg);
+}
+
+/*COURSES*/
+
+#courses-container {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(194, 10%, 70%);
+  align-items: center;
+}
+
+#courses-headline {
+  margin: 32px;
+}
+
+#courses-item-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.courses-container-row {
+  display: flex;
+  margin-top: 16px;
+}
+
+.courses-item {
+
+  background-color: hsl(194, 10%, 90%);
+  margin: 0px 16px;
+  width: 382px;
+}
+
+.courses-item-photo {
+  width: 100%;
+  height: 196px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#software {
+  background-image: url(../images/course-software.jpg);
+}
+
+#computer {
+  background-image: url(../images/course-computer-art.jpg);
+}
+
+#design {
+  background-image: url(../images/course-design.jpg);
+}
+
+#data {
+  background-image: url(../images/course-data.jpg);
+}
+
+#business {
+  background-image: url(../images/course-business.jpg);
+}
+
+#marketing {
+  background-image: url(../images/course-marketing.jpg);
+}
+
+.courses-item-title {
+  margin: 16px 16px 8px 16px;
+}
+
+.courses-item-copy {
+  margin: 0 0 24px 16px;
+  line-height: 1.7;
+}
+
+
+.courses-item-copy h3 {
+  margin-bottom: 8px;
+}
+
+/*THESIS*/
+
+#thesis-container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px hsl(194, 10%, 70%)
+}
+
+#thesis-headline {
+  text-align: center;
+  margin: 32px;
+}
+
+#thesis-main-column {
+  display: flex;
+}
+
+#thesis-main {
+  width: 60%;
+  margin: 0 16px 32px 24px;
+
+}
+
+#thesis-main-video video {
+  width: 100%;
+  height: auto;
+}
+
+#thesis-main-title {
+  margin-top: 24px;
+}
+
+#thesis-main-copy {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+#thesis-column {
+  width: 40%;
+}
+
+.thesis-item {
+  display: flex;
+  align-items: center;
+}
+
+#fisma-item {
+  background-color: hsl(194, 10%, 70%);
+
+}
+
+.thesis-item-photo {
+  width: 148px;
+  height: 148px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 16px;
+}
+
+#fisma {
+  background-image: url(../images/thesis-fisma.jpg);
+}
+
+
+#now {
+  background-image: url(../images/thesis-now-and-then.jpg);
+}
+
+
+.thesis-item-title {
+  margin-bottom: 18px;
+}
+
+/*FOOTER*/
+
+#footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 24px 40px 24px;
+}
+
+#footer-terms {
+  display: flex;
+}
+
+#footer-terms h6{
+  margin-left: 16px;
+}
+
+
+/*RESPONSIVE*/
+
+@media only screen and (min-width:769px){
+
+  #icons {
+    display: none;
+  }
+
+  #lecture-item {
+    background-color: hsl(194, 10%, 70%);
+  }
+
+
+}
+
+@media only screen and (max-width:768px){
+
+  #logo,
+  #nav {
+
+    display: none;
+
+  }
+
+  #banner-container {
+    flex-direction: column;
+    height: 428px;
+  }
+
+  #banner-photo {
+    width: 100%;
+    height: 180px;
+    margin: 0px;
+
+  }
+
+  #banner-text {
+
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+
+  #banner-copy {
+
+    align-self: flex-start;
+    margin: 32px 16px 0px 16px;
+
+  }
+
+  #banner-button {
+
+    margin-left: 0;
+    align-self: center;
+    width: 94%;
+  }
+
+  #info-main {
+    display: none;
+  }
+
+  #info-column {
+    width: 100%;
+  }
+
+  .info-column-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-column-item-photo {
+    width: 382px;
+    height: 181px;
+  }
+
+  #orientation-photo {
+    background-image: url(../images/information-orientation-mobile.jpg);
+    margin-top: 16px;
+  }
+
+  #campus-photo {
+    background-image: url(../images/information-campus-mobile.jpg);
+  }
+
+  #lecture-photo {
+    background-image: url(../images/information-guest-lecture-mobile.jpg);
+  }
+
+  .info-column-item-copy {
+    align-self: flex-start;
+    margin-left: 32px;
+  }
+
+  #courses-container {
+    background-color: hsl(194, 10%, 90%);
+    align-items: center;
+  }
+
+  #courses-headline {
+    margin-bottom: 16px;
+  }
+
+  .courses-container-row {
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .courses-item-photo,
+  .courses-item-copy {
+    display: none;
+  }
+
+  .courses-item-title {
+    background-color: hsl(194, 10%, 70%);
+    padding: 16px;
+    margin-bottom: 8px;
+  }
+
+  #thesis-column,
+  #thesis-main-title,
+  #thesis-main-copy {
+    display: none;
+  }
+
+  #thesis-main {
+    width: 100%;
+    margin: 0 0 24px 0;
+
+  }
+
+  #footer-container {
+    margin: 40px 24px 16px 24px;
+  }
+
+  #footer-terms {
+    display: none;
+  }
+}
